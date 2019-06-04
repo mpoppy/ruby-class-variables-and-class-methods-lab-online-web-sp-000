@@ -35,7 +35,7 @@ class Song
 
   def self.genre_count
     #iterate over @@genres and if it exists increment the key by 1
-    @@genres.group_by{ |v| v }.map{ |k, v| [k, v.size] }
+    @@genres.group_by{ |v| v }.map{ |k, v| [k, v.size] }.to_h
     # @@genre_count.to_h
   end
 
