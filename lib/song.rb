@@ -37,7 +37,7 @@ class Song
   end
 
   def self.artist_count
-    @@artist_count
+    @@artist_count.to_h
   end
 
 end
