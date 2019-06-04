@@ -36,7 +36,7 @@ class Song
   def self.genre_count
     #iterate over @@genres and if it exists increment the key by 1
     @@genres.map {|v| += 1}
-
+    @@genres
     # @@genre_count.to_h
   end
 
